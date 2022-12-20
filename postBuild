@@ -1,0 +1,4 @@
+#Setting up the locate database, based on https://github.com/ericdill/mybinder.org-analytics/blob/7b654e3e21dea790505c626d688aa15640ea5808/sparse/repos/aborruso/bashnotebook/binder/postBuild#L36
+# to use locate in shell to search in what it's just installerd use "mylocate filename" 
+updatedb --output=$HOME/.locate.db
+echo 'alias mylocate="locate --database=$HOME/.locate.db"' >> ~/.bashrc
